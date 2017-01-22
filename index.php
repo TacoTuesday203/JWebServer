@@ -8,7 +8,7 @@
         <img id="bg" src="img/background.jpg" />
         <center>
             <div class="main-container">
-                <span id="title"><b>We're building something great</b>!</span>
+                <span id="title"><b>We're building something great</b>!!</span>
                 <br />
                 <span id="subtitle">Please check back later!</span>
                 <br />
