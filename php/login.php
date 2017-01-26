@@ -22,6 +22,8 @@
         foreach($users as $user) {
             if ($user['username'] == $username && $user['password'] == $password) {
                 echo 'We are currently working on this!';
+                header("Location: ../beta.php?goodlogin=1");
+                $userFound=1;
             }
         }
         if ($userFound == 0) {
