@@ -1,0 +1,50 @@
+body {
+    background-color: whitesmoke;
+}
+
+.header {
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 120px;
+    
+    position: fixed;
+    
+    background-color: white;
+    box-shadow: 0px 7px 13px dimgray;
+}
+
+#title {
+    color: coral;
+    font-family: fantasy;
+    font-size: 48px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px dimgray;
+}
+
+#subtitle {
+    color: white;
+    background-color: coral;
+    font-family: sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+#proceed {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 48px;
+    text-decoration: none;
+    font-family: monospace;
+    color: coral;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 7px 7px 13px dimgray;
+}

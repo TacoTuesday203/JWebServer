@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Sign up for a JWeb account!</title>
+        <link rel="stylesheet" type="text/css" href="../css/register.css?<?php echo time(); ?>">
+    </head>
+    <body>
+        <center>
+            <div class="header">
+                <span id="title">Your JWeb Account</span>
+                <br />
+                <span id="subtitle">Fill in the form below to create your account.</span>
+            </div>
+            <div class="form-container">
+                <form id="register-form" action="php/register.php" method="post">
+                    <span id="form-title">Create Account</span>
+                    <br/>
+                    <span id="required">* = required</span>
+                    <br />
+                    <br />
+                    <span id="title-info-text">Username</span><span id="required">*</span>
+                    <br />
+                    <span id="info-text">You will sign in with your username</span>
+                    <br />
+                    <br />
+                    <input type="text" name="username" id="username" placeholder="Username..." required />
+                    <br />
+                    <br />
+                    <span id="title-info-text">Password</span><span id="required">*</span>
+                    <br />
+                    <span id="info-text">You will sign in with your password</span>
+                    <br />
+                    <br />
+                    <input type="password" name="password" id="password" placeholder="Password..." required />
+                    <br />
+                    <br />
+                    <span id="title-info-text">Display name</span><span id="required">*</span>
+                    <br />
+                    <span id="info-text">This is what other users will see when you make posts, etc.</span>
+                    <br />
+                    <br />
+                    <input type="text" name="displayname" id="displayname" placeholder="Display name..." required />
+                    <br />
+                    <br />
+                    <button type="submit" id="submit-register">Create Account</button>
+                </form>
+            </div>
+        </center>
+    </body>
+</html>

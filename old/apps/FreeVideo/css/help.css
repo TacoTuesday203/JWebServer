@@ -1,0 +1,29 @@
+body {
+    background-color: whitesmoke;
+}
+
+#title {
+    color: coral;
+    font-size: 60px;
+    font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+}
+
+#help_one {
+    width: 500px;
+}
+
+#info_one {
+    color: lightcoral;
+    font-size: 20px;
+    font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+}
+
+#help_two {
+    width: 600px;
+}
+
+#info_two {
+    color: lightcoral;
+    font-size: 20px;
+    font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+}
