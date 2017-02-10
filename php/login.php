@@ -1,5 +1,15 @@
 <?php
 
+    function genSessionToken($length = 10) {
+        $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $charactersLength = strlen($characters);
+        $randomString = '';
+        for ($i = 0; $i < $length; $i++) {
+            $randomString .= $characters[rand(0, $charactersLength - 1)];
+        }
+        return $randomString;
+    }   
+
     session_start();
 
     $db = new PDO('mysql:dbname=jweb;host=localhost', 'root', '');
@@ -21,8 +31,18 @@
         
         foreach($users as $user) {
             if ($user['username'] == $username && $user['password'] == $password) {
-                echo 'We are currently working on this!';
-                header("Location: ../beta.php?goodlogin=1");
+                $sessionID = genSessionToken(15);
+                $sessionQuery = $db->prepare("
+                    INSERT INTO sessions (sessiontoken, username, password)
+                    VALUES (:sessiontoken, :username, :password)
+                ");
+                
+                $sessionQuery->execute([
+                    'sessiontoken' => $sessionID,
+                    'username' => $username,
+                    'password' => $password
+                ]);
+                header("Location: ../home.php?s={$sessionID}");
                 $userFound=1;
             }
         }

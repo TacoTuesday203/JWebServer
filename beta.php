@@ -1,57 +1,44 @@
-<?php
-
-
-?>
-
-
 <html>
     <head>
-        <title>Josh's Webserver Login [beta]</title>
-        <link rel="stylesheet" type="text/css" href="css/beta.css?<?php echo time(); ?>">
-        <script type="text/javascript">
-            /*function anonymousLogin() {
-                document.getElementById('username').value = "???????";
-                document.getElementById('password').value = "we've deleted this feature!";
-                document.forms.loginform.submit();
-            }*/
-        </script>
+        <title>JWebServer Prototype</title>
+        <link rel="stylesheet" href="css/beta.css?<?php echo time(); ?>" />
     </head>
     <body>
-        <div class="header">
-            <center>
-                <span id="title">Welcome to Josh's Webserver</span><span id="beta">BETA</span>
-                <br /><br />
-                <span id="subtitle"><i>Please Login</i></span>
-            </center>
-        </div>
-        <div class="login-container">
-            <form id="loginform" action="php/login.php" method="post">
-                <center>
-                    <span id="login-title">Please login to your JWeb Account</span>
-                    <br /><br />
-                    <img id="login-image" src="img/lock.png" />
+        <img src="img/background.jpg" id="background" />
+        <!--<div class="title-container">
+            <span id="info">i</span><span id="title">Running JWeb 1.0</span>
+            <br />
+        </div>!-->
+        <center>
+            <form action="php/login.php" method="post">
+                <div class="login-container">
+                    <br />
+                    <img src="img/lock.png" id="login-image" />
                     <br />
                     <?php
                     if(isset($_GET['badlogin'])) {
-                        echo '<br /><span id="login-fail-x">BAD</span><span id="login-fail"> Incorrect username or password.</span>';
-                        echo '<br />';
-                    }
-                    if (isset($_GET['goodlogin'])) {
-                        echo '<br /><span id="login-good-x">OK</span><span id="login-good"> Your account was found in our database.</span>';
-                        echo '<br />';
-                    }
+                            echo '<span id="login-fail"> Incorrect username or password.</span>';
+                            echo '<br />';
+                        }
+                        if (isset($_GET['goodlogin'])) {
+                            echo '<span id="login-good"> Your account was found in our database.</span>';
+                            echo '<br />';
+                        }
                     ?>
                     <br />
-                    <input id="username" name="username" type="text" placeholder="Username..." required/><br />
-                    <br /><br />
-                    <input id="password" name="password" type="password" placeholder="Password..." required/><br />
-                    <br /><br />
-                    <button id="submit-login" type="submit">Login</button><!--<button id="guest-login" type="button" onClick="anonymousLogin()">Login as Guest</button>!--><button id="register" type="button" onClick="location.href='register.html'">Register</button>
-                    <br /><br />
-                    <span id="notice-x">!</span><span id="notice"> Our login service is still being buit!</span>
-                </center>
+                    <input name="username" id="username" type="text" placeholder="Username..." />
+                    <br />
+                    <br />
+                    <input name="password" id="password" type="password" placeholder="Password..." />
+                    <br />
+                    <br />
+                    <button id="submit" type="submit">Login</button>
+                    <button id="register" type="button" onclick="location.href='register.html'">Register</button>
+                    <br />
+                    <br />
+                    <img src="img/bg.jpg" id="bg" />
+                </div>
             </form>
-        </div>
-        <!--<img id="bg" src="img/background-beta.jpg" />!-->
+        </center>
     </body>
 </html>

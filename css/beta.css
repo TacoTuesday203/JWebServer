@@ -1,146 +1,100 @@
 body {
-    background-image: url("../img/background-beta.jpg");
-    background-position: center;
-    background-size: cover;
-}
-
-/*#bg {
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: -1;
-}*/
-
-.header {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 120px;
-    background-color: white;
-    opacity: 0.8;
-    position: fixed;
-    box-shadow: 0px 10px 10px black;
-}
-
-#title {
-    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-    font-size: 36px;
-    margin-bottom: 10px;
-    color: cornflowerblue;
-}
-
-#subtitle {
-    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-    font-size: 28px;
-    color: white;
-    background-color: cornflowerblue;
-    border-radius: 7px;
-    padding: 3px;
-}
-
-#beta {
-    font-size: 14px;
-    font-family: sans-serif;
-    color: white;
-    background-color: lightcoral;
-    border-radius: 5px;
-    padding: 2px;
+    /*background-image: linear-gradient(to bottom, lightgray, dimgray);*/
+    background-image: url("img/background.jpg");
 }
 
 .login-container {
-    background-color: white;
-    display: inline-block;
+    /*background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(#a8aaad));
+    //background-image: -webkit-linear-gradient(top, darkgray, #a8aaad);
+    //background-image: -moz-linear-gradient(top, darkgray, #a8aaad);
+    //background-image: linear-gradient(to bottom, darkgray, #a8aaad);*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 15px black;
+    min-width: 250px;
+}
+
+#bg {
     top: 50%;
     left: 50%;
     position: absolute;
+    z-index: -1;
     transform: translate(-50%, -50%);
-    width: 420px; // :)
-    height: 200px;
-    border-radius: 20px;
-    border: 1px solid dimgray;
-    box-shadow: 9px 9px 7px black;
-    opacity: 0.9;
 }
 
-#username, #password {
-    /*border: none;
-    border-bottom: 1px solid dimgray;
-    transition: 500ms box-shadow ease;*/
-    box-shadow:1px 1px 45px #333;
-    transition: 500ms width, background-color ease;
-    width: 200px;
-    border: none;
-    padding: 5px 5px;
-}
-
-#username:hover, #password:hover {
-    /*box-shadow: 12px 13px 0px rgba(204, 211, 51, 0.38),
-    -11px -14px 0px rgba(241, 96, 0, 0.28),
-    18px -24px 0px rgba(0, 0, 0, 0.34),
-    33px -6px 0px rgba(39, 74, 214, 0.28);*/
-    //margin:-5px 0 0 -5px;
-    //height:29px;
-    width:250px;
-    background-color: whitesmoke;
-}
-
-#submit-login {
-    background-color: white;
-    border: 1px solid dimgray;
+.login-container #bg {
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
-    width: 60px;
-    height: 30px;
-    transition: 500ms background-color ease;
-    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-    color: cornflowerblue;
 }
 
-#submit-login:hover {
-    background-color: cornflowerblue;
+#title {
+    font-size: 28px;
+}
+
+#subtitle {
+    font-size: 18px;
+}
+
+#title,#subtitle {
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+    color: black;
+}
+#username, #password {
+    border: none;
+    width: 200px;
+    height: 25px;
+    transition: ease 500ms;
+    border-radius: 5px;
+    text-align: center;
+    /*background-image: -webkit-gradient(linear, left top, left bottom, from(white), white(lightgray));
+    background-image: -webkit-linear-gradient(top, white, lightgray);
+    background-image: -moz-linear-gradient(top, white, lightgray);
+    background-image: linear-gradient(to bottom, white, lightgray);*/
+    background-image: linear-gradient(to bottom, #333333, #555555);
+    margin-left: 10px;
+    margin-right: 10px;
     color: white;
 }
 
-#guest-login {
-    background-color: white;
-    border: 1px solid dimgray;
-    border-radius: 10px;
-    width: 120px;
-    height: 30px;
-    margin-left: 10px;
-    transition: 500ms background-color ease;
-    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-    color: darkseagreen;
+#username:hover, #password:hover {
+    width: 225px;
 }
 
-#guest-login:hover {
-    background-color: darkseagreen;
+#submit {
+    width: 75px;
+    height: 30px;
+    border: 3px solid seagreen;
+    border-radius: 5px;
+    background-color: white;
+    color: seagreen;
+    transition: 250ms background-color ease;
+}
+
+#submit:hover {
+    background-color: seagreen;
     color: white;
 }
 
 #register {
-    background-color: white;
-    border: 1px solid dimgray;
-    border-radius: 10px;
-    width: 70px;
+    width: 75px;
     height: 30px;
-    margin-left: 10px;
-    transition: 500ms background-color ease;
-    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-    color: coral;
+    border: 3px solid cornflowerblue;
+    border-radius: 5px;
+    background-color: white;
+    color: cornflowerblue;
+    transition: 250ms background-color ease;
 }
 
 #register:hover {
-    background-color: coral;
+    background-color: cornflowerblue;
     color: white;
-}
-
-#login-title {
-    font-family: Tahoma, Verdana, Segoe, sans-serif;
-    font-size: 26px;
-    color: coral;
-    text-shadow: 2px 2px dimgray;
 }
 
 #login-image {
@@ -148,14 +102,33 @@ body {
     height: 100px;
 }
 
-#login-fail-x {
-    font-family: font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-    color: white;
-    font-size: 18px;
-    border: 1px solid firebrick;
-    padding: -1px;
-    background-color: firebrick;
-    border-radius: 3px;
+.title-container {
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    background-image: linear-gradient(to bottom, white, whitesmoke);
+    width: 10px;
+    transition: 1s width;
+}
+
+.title-container:hover {
+    width: 250px;
+}
+
+#background {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#info {
+    font-size: 36px;
+    margin-right: 15px;
 }
 
 #login-fail {
@@ -165,16 +138,6 @@ body {
     text-shadow: 0.5px 0.5px black;
 }
 
-#login-good-x {
-    font-family: font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-    color: white;
-    font-size: 18px;
-    border: 1px solid darkseagreen;
-    padding: -1px;
-    background-color: darkseagreen;
-    border-radius: 3px;
-}
-
 #login-good {
     font-family: font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
     color: darkseagreen;
@@ -182,18 +145,4 @@ body {
     text-shadow: 0.5px 0.5px black;
 }
 
-#notice-x {
-    font-family: font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-    color: white;
-    font-size: 18px;
-    border: 1px solid #FFDC00;
-    padding: 2px;
-    background-color: #FFDC00;
-    border-radius: 6px;
-}
 
-#notice {
-    font-family: font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-    color: #FFDC00;
-    font-size: 17px;
-}
