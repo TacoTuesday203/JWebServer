@@ -1,0 +1,199 @@
+body {
+    background-image: url("../img/background-beta.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+/*#bg {
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}*/
+
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-color: white;
+    opacity: 0.8;
+    position: fixed;
+    box-shadow: 0px 10px 10px black;
+}
+
+#title {
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: cornflowerblue;
+}
+
+#subtitle {
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 28px;
+    color: white;
+    background-color: cornflowerblue;
+    border-radius: 7px;
+    padding: 3px;
+}
+
+#beta {
+    font-size: 14px;
+    font-family: sans-serif;
+    color: white;
+    background-color: lightcoral;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.login-container {
+    background-color: white;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 420px; // :)
+    height: 200px;
+    border-radius: 20px;
+    border: 1px solid dimgray;
+    box-shadow: 9px 9px 7px black;
+    opacity: 0.9;
+}
+
+#username, #password {
+    /*border: none;
+    border-bottom: 1px solid dimgray;
+    transition: 500ms box-shadow ease;*/
+    box-shadow:1px 1px 45px #333;
+    transition: 500ms width, background-color ease;
+    width: 200px;
+    border: none;
+    padding: 5px 5px;
+}
+
+#username:hover, #password:hover {
+    /*box-shadow: 12px 13px 0px rgba(204, 211, 51, 0.38),
+    -11px -14px 0px rgba(241, 96, 0, 0.28),
+    18px -24px 0px rgba(0, 0, 0, 0.34),
+    33px -6px 0px rgba(39, 74, 214, 0.28);*/
+    //margin:-5px 0 0 -5px;
+    //height:29px;
+    width:250px;
+    background-color: whitesmoke;
+}
+
+#submit-login {
+    background-color: white;
+    border: 1px solid dimgray;
+    border-radius: 10px;
+    width: 60px;
+    height: 30px;
+    transition: 500ms background-color ease;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    color: cornflowerblue;
+}
+
+#submit-login:hover {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+#guest-login {
+    background-color: white;
+    border: 1px solid dimgray;
+    border-radius: 10px;
+    width: 120px;
+    height: 30px;
+    margin-left: 10px;
+    transition: 500ms background-color ease;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    color: darkseagreen;
+}
+
+#guest-login:hover {
+    background-color: darkseagreen;
+    color: white;
+}
+
+#register {
+    background-color: white;
+    border: 1px solid dimgray;
+    border-radius: 10px;
+    width: 70px;
+    height: 30px;
+    margin-left: 10px;
+    transition: 500ms background-color ease;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    color: coral;
+}
+
+#register:hover {
+    background-color: coral;
+    color: white;
+}
+
+#login-title {
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    font-size: 26px;
+    color: coral;
+    text-shadow: 2px 2px dimgray;
+}
+
+#login-image {
+    width: 100px;
+    height: 100px;
+}
+
+#login-fail-x {
+    font-family: font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    color: white;
+    font-size: 18px;
+    border: 1px solid firebrick;
+    padding: -1px;
+    background-color: firebrick;
+    border-radius: 3px;
+}
+
+#login-fail {
+    font-family: font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    color: firebrick;
+    font-size: 17px;
+    text-shadow: 0.5px 0.5px black;
+}
+
+#login-good-x {
+    font-family: font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    color: white;
+    font-size: 18px;
+    border: 1px solid darkseagreen;
+    padding: -1px;
+    background-color: darkseagreen;
+    border-radius: 3px;
+}
+
+#login-good {
+    font-family: font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    color: darkseagreen;
+    font-size: 17px;
+    text-shadow: 0.5px 0.5px black;
+}
+
+#notice-x {
+    font-family: font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    color: white;
+    font-size: 18px;
+    border: 1px solid #FFDC00;
+    padding: 2px;
+    background-color: #FFDC00;
+    border-radius: 6px;
+}
+
+#notice {
+    font-family: font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    color: #FFDC00;
+    font-size: 17px;
+}
