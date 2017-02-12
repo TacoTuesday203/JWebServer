@@ -1,0 +1,28 @@
+body {
+    background-color: whitesmoke;
+}
+
+.message {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 130px;
+    position: absolute;
+    display: inline-block;
+    background-color: white;
+    box-shadow: 0px 0px 7px dimgray;
+    border-radius: 5px;
+}
+
+#title {
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 48px;
+    color: seagreen;
+    padding: 30px;
+}
+
+#subtitle, a {
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 36px;
+    color: darkseagreen;
+}

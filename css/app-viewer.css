@@ -1,0 +1,50 @@
+body {
+    background-color: whitesmoke;
+}
+
+#app-viewer {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 33%;
+    display: inline-block;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    box-shadow: 0px 0px 45px dimgray;
+    border-radius: 20px;
+    padding-bottom: 30px;
+}
+
+#title {
+    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    color: white;
+    font-size: 36px;
+    padding: 10px;
+}
+
+#apps {
+    padding: 0px;
+    margin: 0px;
+}
+
+#app {
+    list-style: none;
+}
+
+#app a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    background-color: #1E1C1F;
+    border-bottom: 1px dashed white;
+    width: 100%;
+    padding 3%;
+    font-size: 36px;
+    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+#app img {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}

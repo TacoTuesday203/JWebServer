@@ -1,0 +1,30 @@
+body {
+    background-color: #DDDDDD;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0px;
+    background-color: #FF4136;
+    border: 10px outset darkred;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    display: inline-block;
+    background-color: #DDDDDD;
+    border-radius: 5px;
+    padding: 5px;
+    color: #AAAAAA;
+    font-family: monospace;
+}
+
+p {
+    top: 0;
+    left: 0;
+    margin-top: 25%;
+}

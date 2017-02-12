@@ -1,0 +1,148 @@
+body {
+    /*background-image: linear-gradient(to bottom, lightgray, dimgray);*/
+    background-image: url("img/background.jpg");
+}
+
+.login-container {
+    /*background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(#a8aaad));
+    //background-image: -webkit-linear-gradient(top, darkgray, #a8aaad);
+    //background-image: -moz-linear-gradient(top, darkgray, #a8aaad);
+    //background-image: linear-gradient(to bottom, darkgray, #a8aaad);*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 15px black;
+    min-width: 250px;
+}
+
+#bg {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+.login-container #bg {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#title {
+    font-size: 28px;
+}
+
+#subtitle {
+    font-size: 18px;
+}
+
+#title,#subtitle {
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+    color: black;
+}
+#username, #password {
+    border: none;
+    width: 200px;
+    height: 25px;
+    transition: ease 500ms;
+    border-radius: 5px;
+    text-align: center;
+    /*background-image: -webkit-gradient(linear, left top, left bottom, from(white), white(lightgray));
+    background-image: -webkit-linear-gradient(top, white, lightgray);
+    background-image: -moz-linear-gradient(top, white, lightgray);
+    background-image: linear-gradient(to bottom, white, lightgray);*/
+    background-image: linear-gradient(to bottom, #333333, #555555);
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+#username:hover, #password:hover {
+    width: 225px;
+}
+
+#submit {
+    width: 75px;
+    height: 30px;
+    border: 3px solid seagreen;
+    border-radius: 5px;
+    background-color: white;
+    color: seagreen;
+    transition: 250ms background-color ease;
+}
+
+#submit:hover {
+    background-color: seagreen;
+    color: white;
+}
+
+#register {
+    width: 75px;
+    height: 30px;
+    border: 3px solid cornflowerblue;
+    border-radius: 5px;
+    background-color: white;
+    color: cornflowerblue;
+    transition: 250ms background-color ease;
+}
+
+#register:hover {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+#login-image {
+    width: 100px;
+    height: 100px;
+}
+
+.title-container {
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    background-image: linear-gradient(to bottom, white, whitesmoke);
+    width: 10px;
+    transition: 1s width;
+}
+
+.title-container:hover {
+    width: 250px;
+}
+
+#background {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#info {
+    font-size: 36px;
+    margin-right: 15px;
+}
+
+#login-fail {
+    font-family: font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    color: firebrick;
+    font-size: 17px;
+    text-shadow: 0.5px 0.5px black;
+}
+
+#login-good {
+    font-family: font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    color: darkseagreen;
+    font-size: 17px;
+    text-shadow: 0.5px 0.5px black;
+}
+
+

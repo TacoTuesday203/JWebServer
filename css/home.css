@@ -1,0 +1,180 @@
+body {
+    background-image: linear-gradient(white, #BBBBBB);
+}
+
+#title-f {
+    color: white;
+}
+
+#title-f {
+    font-size: 28px;
+    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    transform: translate(-70px, 33%);
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+#profile-pic {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    padding: 5px;
+    right: 0;
+    z-index: 2;
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    text-align: right;
+}
+
+#sidebar {
+    background: #151718;
+    width: 200px;
+    height: 75%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -200;
+    transition: left 0.3s linear;
+}
+
+#sidebar.visible {
+    left: 0px;
+    box-shadow: 0px 0px 15px;
+    transition: left 0.3s linear;
+}
+
+#menu-list {
+    margin: 0px;
+    padding: 0px;
+}
+
+#menu-list-item {
+    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    list-style: none;
+}
+
+#menu-list-item a {
+    background: #1C1E1F;
+    color: #ccc;
+    border-bottom: 1px solid #ccc;
+    display: block;
+    width: 180px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#menu-list-item a img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+#sidebar-btn {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    position: absolute;
+    top: 20px;
+    right: -60px;
+    height: 30px;
+}
+
+#sidebar-btn span {
+    height: 2px;
+    background: black;
+    margin-bottom: 10px;
+    display: block;
+}
+
+#version-text {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+#content {
+    background-color: black;
+    display: inline-block;
+    top: 0;
+    position: absolute;
+    transform: translate(-50%, 0%);
+    margin-top: 20px;
+    max-width: 33%;
+    width: 33%;
+    max-height: 75%;
+    height: 75%;
+    border-radius: 15px;
+    background-image: linear-gradient(black, #222222);
+    
+}
+
+#title {
+    color: white;
+    font-size: 36px;
+    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    padding: 10px;
+}
+
+#messages {
+    margin: 0px;
+    padding: 0px;
+}
+
+#message {
+    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    background: #1C1E1F;
+    width: 94%;
+    padding: 3%;
+    border-bottom: 1px solid white;
+}
+
+#message-user {
+    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    color: white;
+    background: #1C1E1F;
+    width: 94%;
+    padding: 3%;
+}
+
+#add-message {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-top: 40px;
+    transform: translate(-50%, 0%);
+}
+
+#add-message textarea {
+    border: none;
+    border-radius: 10px;
+    box-shadow: none;
+    resize: none;
+    font-size: 14px;
+    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+#submit-message {
+    background-color: white;
+    font-size: 28px;
+    border: 1px solid cornflowerblue;
+    border-radius: 10px;
+    color: cornflowerblue;
+    transition: 0.2s ease;
+}
+
+#submit-message:hover {
+    background-color: cornflowerblue;
+    color: white;
+}
