@@ -68,56 +68,19 @@
                     <li id="message"><span id="message-user">ADMIN</span>This feature is still being worked on.</li>
                     <li id="message"><span id="message-user">ADMIN</span>Later on, you will be able to post messages here</li>
                      <li id="message"><span id="message-user">ADMIN</span>PRO-TIP: Open your menu and click 'apps' to see what apps you can use!</li>
+                    <div id="add-message">
+                        <textarea placeholder="Enter message here..." rows=5 cols=50></textarea>
+                        <br />
+                        <button type="submit" id="submit-message">+</button>
+                    </div>
                 </ul>
             </div>
-            <div id="add-message">
-                <textarea placeholder="Enter message here..." rows=5 cols=50></textarea>
-                <br />
-                <button type="submit" id="submit-message">+</button>
-            </div>
+            <!--<div id="news-content">!-->
+                <iframe id="news" src="news.php"></iframe>
+            <!--</div>!-->
         </center>
         <div class="footer">
             <span id="title-f">Welcome back, <?php echo $username; ?></span><img id="profile-pic" src="img/lock.png">
         </div>
     </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--<div class="header">
-                <span id="title">Welcome back, <?php echo $username; ?></span><img id="profile-pic" src="img/lock.png">
-        </div>
-        <div class="lines">
-            <button id="menu" onclick="resize()">
-            <span id="sep">D</span>
-            <span id="line">DDDDDD</span><br />
-            <span id="sep">D</span>
-            <span id="line">DDDDDD</span><br />
-            <span id="sep">D</span>
-            <span id="line">DDDDDD</span>
-            </button>
-        </div>
-        <div class="sidebar">
-            <p>Under construction</p>
-        </div>
-        <center>
-            <div class="footer">
-                <span id="footer-text">This server is running JWeb 1.0 beta</span>
-            </div>
-        </center>!-->

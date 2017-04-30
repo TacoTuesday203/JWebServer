@@ -33,7 +33,7 @@
         <link rel="stylesheet" href="css/app-viewer.css?<?php echo time(); ?>" />
     </head>
     <body>
-        <center>
+        <!--<center>
             <div id="app-viewer">
                 <span id="title">Viewing apps for <?php echo $username; ?></span>
                 <br />
@@ -46,6 +46,6 @@
                     <li id="app"><img src="img/exit.png" /><a href="../home.php?s=<?php echo $_GET['s']; ?>">Return to Home</a></li>
                 </ul>
             </div>
-        </center>
+        </center>!-->
     </body>
 </html>

@@ -102,11 +102,10 @@ body {
 }
 
 #content {
+    float: right;
+    margin-right: 15%;
     background-color: black;
     display: inline-block;
-    top: 0;
-    position: absolute;
-    transform: translate(-50%, 0%);
     margin-top: 20px;
     max-width: 33%;
     width: 33%;
@@ -150,10 +149,8 @@ body {
 
 #add-message {
     position: absolute;
-    top: 70%;
-    left: 50%;
-    margin-top: 40px;
-    transform: translate(-50%, 0%);
+    top: 63%;
+    width: 33%;
 }
 
 #add-message textarea {
@@ -163,6 +160,7 @@ body {
     resize: none;
     font-size: 14px;
     font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    width: 50%;
 }
 
 #submit-message {
@@ -172,9 +170,25 @@ body {
     border-radius: 10px;
     color: cornflowerblue;
     transition: 0.2s ease;
+    width: 30%;
 }
 
 #submit-message:hover {
     background-color: cornflowerblue;
     color: white;
+}
+
+#news {
+    float: left;
+    margin-left: 15%;
+    background-color: black;
+    display: inline-block;
+    margin-top: 20px;
+    max-width: 33%;
+    width: 33%;
+    max-height: 75%;
+    height: 75%;
+    border: none;
+    border-radius: 15px;
+    background-image: linear-gradient(black, #222222);
 }
